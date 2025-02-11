@@ -1,0 +1,73 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with gradient background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #ffafbd, #ffc3a0); /* Soft pink to peach gradient */
+    color: #333;
+    text-align: center;
+    padding-top: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2); /* Adding a soft shadow for depth */
+    text-transform: uppercase;
+}
+
+/* Button Styling */
+button {
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(to right, #ff416c, #ff4b2b); /* Gradient for buttons */
+    border: none;
+    padding: 20px 50px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 50px; /* Rounded buttons for an aesthetic look */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c); /* Inverted gradient on hover */
+    transform: translateY(-5px); /* Slightly raise button on hover */
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transform: translateY(0); /* Button returns to normal when clicked */
+}
+
+/* Optional: Add a smooth fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1.5s ease-out;
+}
